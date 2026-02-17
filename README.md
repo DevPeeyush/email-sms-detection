@@ -1,19 +1,9 @@
-# email-sms-detection
-
-Here is a clean, professional, and GitHub-ready **README.md** for your project.
-It’s balanced — not too big, not too small — and explains everything step-by-step clearly.
-
-You can copy-paste this directly into your `README.md` file.
-
----
-
-# 📩 SMS Spam Detection
+#  SMS Spam Detection
 
 A Machine Learning web application that detects whether a message is **Spam** or **Not Spam** using Natural Language Processing (NLP) and Streamlit.
 
----
 
-## 🚀 Project Overview
+##  Project Overview
 
 Spam messages are a major problem in communication systems.
 This project builds a **binary classification model** that classifies messages into:
@@ -23,9 +13,7 @@ This project builds a **binary classification model** that classifies messages i
 
 The model is trained using NLP preprocessing and TF-IDF vectorization, then deployed using Streamlit as a web app.
 
----
-
-## 🎯 Problem Statement
+##  Problem Statement
 
 Build a machine learning system that:
 
@@ -34,8 +22,7 @@ Build a machine learning system that:
 * Predicts whether the message is Spam or Not Spam
 
 ---
-
-## 🧠 Solution Approach (Step-by-Step)
+##  Solution Approach (Step-by-Step)
 
 ### 1️⃣ Data Collection
 
@@ -44,8 +31,6 @@ Build a machine learning system that:
 
   * `label` (spam/ham)
   * `message` (text content)
-
----
 
 ### 2️⃣ Data Preprocessing (NLP)
 
@@ -59,17 +44,12 @@ We applied the following steps:
 
 Example preprocessing function used in `app.py` 
 
----
-
 ### 3️⃣ Feature Engineering
 
 We converted text into numerical form using:
-
 * **TF-IDF Vectorization**
 
 This helps the model understand the importance of words.
-
----
 
 ### 4️⃣ Model Training
 
@@ -80,8 +60,6 @@ This helps the model understand the importance of words.
   * `vectorizer.pkl`
 
 These files are loaded inside the Streamlit app.
-
----
 
 ### 5️⃣ Model Deployment
 
@@ -95,7 +73,6 @@ App workflow:
 4. Model predicts spam or not spam
 5. Result is displayed
 
----
 
 ## 🖥️ App Interface
 
@@ -107,8 +84,6 @@ The application allows users to:
 
   * ✅ NOT SPAM
   * 🚨 SPAM
-
----
 
 ## 🛠️ Technologies Used
 
@@ -138,28 +113,22 @@ SMS-Spam-Detection/
 ## ▶️ How to Run the Project
 
 ### Step 1: Clone Repository
-
 ```bash
 git clone <your-repo-link>
 cd SMS-Spam-Detection
 ```
 
 ### Step 2: Install Dependencies
-
 ```bash
 pip install -r requirements.txt
 ```
-
 Or manually install:
-
 ```bash
 pip install streamlit sklearn nltk pandas
 ```
 
 ---
-
 ### Step 3: Run the App
-
 ```bash
 streamlit run app.py
 ```
@@ -167,41 +136,15 @@ streamlit run app.py
 ---
 
 ## 📊 Model Performance
-
 * Achieved high accuracy on validation data.
 * Proper preprocessing improves prediction quality.
 
----
 
 ## 💡 Key Learnings
-
 * Text data requires heavy preprocessing.
 * TF-IDF works well for spam classification.
 * Deployment is important after model training.
 * Saving models properly prevents prediction errors.
 
----
-
-## 🔮 Future Improvements
-
-* Add more advanced models (Logistic Regression, XGBoost)
-* Deploy online (Render / Heroku / AWS)
-* Improve UI design
-* Add probability score display
-
----
-
 ## 👨‍💻 Author
-
 **Peeyush Verma**
-
----
-
-If you want, I can also:
-
-* ✅ Create a professional GitHub description line
-* ✅ Create a requirements.txt file
-* ✅ Create a project banner image
-* ✅ Help you deploy it online
-
-Just tell me 👍
